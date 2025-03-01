@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 
-function Header() {
+function HeaderTransactions() {
   return (
     <header className="h-[212px] bg-black p-4 pt-8">
       <div className="m-auto flex max-w-[1200px] items-center justify-between">
@@ -23,4 +23,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderTransactions;
