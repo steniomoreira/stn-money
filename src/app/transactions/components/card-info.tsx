@@ -15,12 +15,12 @@ function CardInfo({ title, icon, amount, className }: ICardInfoProps) {
     <Card className={className}>
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
-          <p className="text-muted-foreground text-base font-normal">{title}</p>
+          <p className="text-stnGray2 text-base font-normal">{title}</p>
           {icon}
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="text-2xl">{formatCurrency(amount)}</p>
+        <p className="text-2xl font-bold">{formatCurrency(amount)}</p>
       </CardContent>
     </Card>
   );

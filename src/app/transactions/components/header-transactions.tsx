@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 function HeaderTransactions() {
   return (
-    <header className="h-[212px] bg-black p-4 pt-8">
+    <header className="bg-stnGray7 h-[212px] p-4 pt-8">
       <div className="m-auto flex max-w-[1200px] items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="relative h-10 w-9">
