@@ -10,6 +10,7 @@ import { Input } from "@/components/ui/input";
 
 import CardInfo from "./components/card-info";
 import HeaderTransactions from "./components/header-transactions";
+import TableTransactions from "./components/table-transactions";
 
 function TransactionsPage() {
   return (
@@ -17,40 +18,39 @@ function TransactionsPage() {
       <HeaderTransactions />
 
       <main>
-        <div className="m-auto flex max-w-[1200px] flex-col gap-8">
+        <div className="m-auto flex max-w-[1200px] flex-col gap-4 px-4">
           <div className="-mt-16 grid grid-cols-3 gap-8">
             <CardInfo
               title="Entradas"
-              icon={<CircleArrowUp className="text-green_stn" />}
+              icon={<CircleArrowUp className="text-stnGreen1" />}
               amount={15000}
             />
             <CardInfo
               title="Saídas"
-              icon={<CircleArrowDown className="text-rose-500" />}
+              icon={<CircleArrowDown className="text-stnRed1" />}
               amount={5000}
             />
             <CardInfo
               title="Total"
               icon={<ArrowDownUp />}
               amount={10000}
-              className="bg-green_stn"
+              className="bg-stnGreen3"
             />
           </div>
 
-          <div className="flex items-center justify-between gap-4">
-            <Input
-              placeholder="Busque uma transação"
-              className="focus-visible:ring-0 focus-visible:ring-offset-0"
-            />
+          <div className="mt-4 flex items-center justify-between gap-4">
+            <Input placeholder="Busque uma transação" />
 
             <Button
               variant="outline"
-              className="border-green_stn font-semibold text-green_stn hover:bg-green_stn"
+              className="hover:bg-stnGreen2 hover:border-stnGreen2 border-stnGreen1 text-stnGreen1 font-semibold hover:text-white"
             >
               <Search />
               Buscar
             </Button>
           </div>
+
+          <TableTransactions />
         </div>
       </main>
     </>
